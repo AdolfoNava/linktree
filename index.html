@@ -10,15 +10,23 @@
           <!-- we will always use a character set called UTF-8 -->
           <!-- UTF-8 allows for all languages as well as things like emoji -->
           <style>
+            
+            * {
+              border: thin red solid;
+            }
             body{
-              padding-top: 40px;
-              padding-bottom: 40px;
+              background-color: #8AD4FF;
+              flex-direction: column;
+              gap: 30px;
+              max-width: 640px;
+              flex-grow: 1;
             }
             .banner-image {
               width: 128px;
               height: 128px;
               object-fit: cover;
               border-radius: 128px;
+              padding-bottom: 20px;
             }
             .thumbnail{
               width: 48px;
@@ -26,10 +34,38 @@
               border-radius: 48px;
               object-fit: cover;
             }
+            .Page-Title, .name,.sub-title{
+              color: black;
+              display: flex;
+              justify-content: center;
+              text-decoration: none;
+            }
+            .link{
+              background-color: #8812be;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+            }
+            .link a {
+              color: #0c0011;
+              text-decoration: none;
+              justify-content: center;
+              flex-grow: 1;
+              align-items: center;
+              text-align: center;
+            }
+            .banner{
+              display: flex;
+              justify-content: space-around;
+            }
+            .social-icons{
+              display: flex;
+              justify-content: space-around;
+            }
           </style>
   </head>
 <body>
-  <h1>My link in bio</h1>
+  <h1 class="Page-Title">My link in bio</h1>
   <div class="banner">
     <img src="IMG_20221007_154634000new.jpg" alt="Adolfo Nava Headshot" class="banner-image">
   </div>
@@ -44,21 +80,21 @@
     LinkedIn
   </a>
 </div>
-<h2>Things that I have enjoyed recently</h2>
+<h2 class="sub-title">Things that I have enjoyed recently</h2>
 <div class="link">
-  <img src="images/YUX4NL.png" alt="">
+  <img src="images/YUX4NL.png" alt="" class="thumbnail">
   <a target="_blank" href="https://vampitup.itch.io/speedwave">
     Speedwave
   </a>
 </div>
 <div class="link">
-  <img src="images/4unOrdinary_Return_mobile_thumbnail_3.jpg" alt="">
+  <img src="images/4unOrdinary_Return_mobile_thumbnail_3.jpg" alt="" class="thumbnail">
   <a target="_blank" href="https://www.webtoons.com/en/super-hero/unordinary/list?title_no=679">
     UnOrdinary
   </a>
 </div>
 <div class="link">
-  <img src="images/20220913-ovicio-tekken-8-game.jpg" alt="">
+  <img src="images/20220913-ovicio-tekken-8-game.jpg" alt="" class="thumbnail">
   <a target="_blank" href="https://tekken.com/">
     Tekken 8
   </a>
